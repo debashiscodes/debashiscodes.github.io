@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% render "post_note", post: resource %}
+
+<h1>{{ data.title }}{% if data.subtitle %}: {{ data.subtitle }}{% endif %}</h1>
+
+{% if data.image %}
+<figure>
+  <img src="{{ data.image | prepend: '/images/' | relative_url }}" alt="" />
+</figure>
+{% endif %}
+
+<article class="mt-16">
+  {{ content }}
+</article>
+
+{% if data.pdf %}
+<p><a href="{{ data.pdf }}" target="_blank">Read in separate tab →</a></p>
+
+<object data="{{ data.pdf }}" type="application/pdf" width="100%" style="height: 50rem;">
+  alt: <a href="{{ data.pdf }}">{{ data.title }}</a>
+</object>
+{% endif %}
+
+<div class="mb-10"></div>
+
+{% render "footer", metadata: site.metadata %}

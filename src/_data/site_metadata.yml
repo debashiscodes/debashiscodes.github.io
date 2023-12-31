@@ -1,0 +1,12 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Debashis Biswal
+tagline: Thoughts on Ruby and beyond
+email: debashiscodes@gmail.com
+author: Debashis Biswal
+description: >-
+  This is my personal site, where I write articles upon Ruby, Ruby On Rails, and it's allied technology.
