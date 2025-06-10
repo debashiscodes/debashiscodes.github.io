@@ -4,10 +4,12 @@ title:  "Perfecting Your Git Commits with Prefixes"
 date:   2025-06-10 11:27:41 +0530
 categories: git
 ---
-Ever struggled to understand what a particular `commit` did months down the line? The secret to a clean, understandable, and manageable Git history lies in well-crafted commit messages, especially when you incorporate prefixes.
+Have you ever been confused by a Git commit message, whether it's from a past teammate or on a recent pull request, struggling to understand what work was actually done?
+
+The secret to a clean, understandable, and manageable Git history lies in well-crafted commit messages, especially when you add a  prefixe to your commit message.
 
 ### Why Prefixes?
-Prefixes bring instant clarity and structure to your commit messages. They act as quick labels, telling anyone (including your future self!) what the commit is about at a glance. No more guessing if fixed bug refers to a critical crash or a typo!
+Prefixes bring instant clarity and structure to your commit messages. They act as quick labels, telling anyone (including your future self!) what the commit is about at a glance. No more guessing if fixed bug refers to a `critical crash` or a `typo`!
 
 ### Common Prefixes
 `feat` – Adding a new feature
