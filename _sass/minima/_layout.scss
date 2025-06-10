@@ -207,7 +207,13 @@
   @include relative-font-size(1.5);
 }
 
+a.post-link {
+  color: #c24b42;
 
+   &:hover {
+    color: #261B23;
+  }
+}
 
 /**
  * Posts
