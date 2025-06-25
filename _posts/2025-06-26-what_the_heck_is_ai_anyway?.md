@@ -99,8 +99,7 @@ It uses AI, ML, and DL together to work with text and speech.
 
 #### 🏗️ Foundation Models (FM)
 
-These are **powerful AI models** trained on huge datasets.
-They can do many different tasks without needing to be retrained for each one.
+Foundation Models are **powerful AI models trained on huge amounts of data. They are like **all-rounders – instead of being trained for one task, they can be fine-tuned to do many different things without starting from scratch.
 
 Examples include **GPT** and **BERT**.
 
