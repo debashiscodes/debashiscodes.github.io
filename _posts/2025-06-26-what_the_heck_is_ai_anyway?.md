@@ -99,7 +99,7 @@ It uses AI, ML, and DL together to work with text and speech.
 
 #### 🏗️ Foundation Models (FM)
 
-Foundation Models are **powerful AI models trained on huge amounts of data. They are like **all-rounders – instead of being trained for one task, they can be fine-tuned to do many different things without starting from scratch.
+Foundation Models are **powerful AI models** trained on huge amounts of data. They are like **all-rounders – instead of being trained for one task, they can be fine-tuned to do many different things without starting from scratch.
 
 Examples include **GPT** and **BERT**.
 
@@ -121,3 +121,8 @@ Think of it like this...
 🗣️ Natural Language Processing (NLP) is like **talking to your smart kitchen assistant**. You say, “Make pasta,” and it understands your words, finds the recipe, and starts cooking.
 
 🤖🍽️ Foundation Models (FM) are like a **super robot chef**. This robot has been trained on **every recipe in the world**. You don’t need to teach it how to cook each meal — just tell it what you want, and it can do almost anything right away.
+
+### What are Language Models (LMs)?
+
+**Language Models** (LMs) are a type of AI that can read, understand, and write human language — like English, Hindi, German, etc. That’s what modern LMs like **GPT-4** or **BERT** do.
+
