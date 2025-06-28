@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What the Heck Is AI, Anyway?"
-date:   2025-06-25 11:27:41 +0530
+date:   2025-06-26 11:27:41 +0530
 categories: AI
 ---
 AI is like giving a brain 🧠 to a machine 🤖, so it can do smart things just like people do.
