@@ -4,9 +4,9 @@ title:  "Ruby Writes Code. Java Writes Novels"
 date:   2025-07-07 11:28:41 +0530
 categories: Ruby
 ---
-Java walks in, wearing a formal suit and carrying a huge 600-page manual.
+In a tech conference, Java walks in, wearing a formal suit and carrying a huge 600-page manual.
 
-Ruby is relaxed on a bean bag, wearing a hoodie, typing on a laptop, and calmly sipping a cup of matcha tea.
+Ruby is relaxed on a bean bag, wearing a hoodie, typing on a laptop, and calmly sipping a cup of AI (Adrak (ginger) and ilaichi (cardamom)) tea.
 
 🗣️
 
