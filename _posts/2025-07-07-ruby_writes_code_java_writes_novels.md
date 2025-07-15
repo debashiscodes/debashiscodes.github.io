@@ -99,4 +99,4 @@ I'm a magic wand.
 Keep writing your `public static voids`.
 I’ll be over here, building apps before your compiler finishes warming up.
 
-Keep Calm and Code in Ruby
+<span class="yello">Keep Calm and Code in Ruby</span>
