@@ -21,10 +21,9 @@
 title: Debashis Biswal
 email: debashis.biswal@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hallo 👋, I’m Debashis Biswal — a software engineer with years of experience working with
-  Ruby, Rails, JavaScript, SQL, AWS, and AI.
-  This is my personal space on the internet where
-  I pen down my journey through what I learn, build, and discover.
+  Hallo 👋, I’m Debashis Biswal — a Software Engineer with years of experience working with
+  Ruby, Rails, JavaScript, SQL, AWS, and now on AI.
+  This is my write-up where I pen down my journey through what I learn, build, and discover.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: debashiscodes
