@@ -19,7 +19,7 @@ You need to ensure ActiveSupport is loaded — in a Rails app, it always is.
 # => ["Bhubaneswar", "Pune", "Berlin", "Hyderabad"]
 
 {name: "Debashis", address: nil, age: ""}.compact_blank
-{name: "Debashis"}
+# => {name: "Debashis"}
 ```
 ## When should you use compact_blank?
 **Use Case 1: Cleaning up form input data**
