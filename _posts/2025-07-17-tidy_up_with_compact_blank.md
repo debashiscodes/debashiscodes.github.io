@@ -46,7 +46,7 @@ data = {
 data.compact_blank
 # => { name: "Debashis" }
 ```
-** Use Case 3: Chaining for elegant one-liners**
+**Use Case 3: Chaining for elegant one-liners**
 ```ruby
 user_input.split(",").map(&:strip).compact_blank
 ```
