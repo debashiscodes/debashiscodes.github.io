@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "each in Ruby: Not Just a Loop, It’s a Language Powerhouse"
+title:  "Ruby each: Not Just a Loop, It’s a Language Powerhouse"
 date:   2025-07-19 11:28:41 +0530
 categories: Ruby
 ---
