@@ -211,10 +211,10 @@
 }
 
 a.post-link {
-  color: #111827;
+  color: #5a5a5a;
 
    &:hover {
-    color: #111827;
+    color: #5a5a5a;
   }
 }
 
@@ -282,3 +282,11 @@ a.post-link {
   color: black;
   padding-top: 30px;
 }
+
+ .gradient-text {
+    background: linear-gradient(to right, #f6d365, #fda085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // font-size: 2em;
+    // font-weight: bold;
+    }
