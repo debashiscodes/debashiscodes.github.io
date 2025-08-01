@@ -283,10 +283,35 @@ a.post-link {
   padding-top: 30px;
 }
 
- .gradient-text {
-    background: linear-gradient(to right, #f6d365, #fda085);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    // font-size: 2em;
-    // font-weight: bold;
-    }
+.gradient-text {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // font-size: 2em;
+  // font-weight: bold;
+}
+
+.button-wrapper {
+  text-align: center; /* ✅ Center contents like the button */
+  margin-top: 1.5rem;  /* Optional spacing */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  border: none;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(to right, #f6d365, #fda085);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
