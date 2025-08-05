@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "attribute_names vs column_names in Rails – What's the Difference?"
-date:   2025-07-29 11:28:41 +0530
+date:   2025-08-04 11:28:41 +0530
 categories: Rails
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Easiest Way to Peek Inside Any Rails Model"
-date:   2025-07-29 11:28:41 +0530
+date:   2025-08-05 11:28:41 +0530
 categories: Rails
 ---
 
