@@ -5,13 +5,17 @@ date:   2025-08-15 11:28:41 +0530
 categories: Rails
 ---
 
-### Simple Difference
-- **Cookie** = Small piece of data stored in the **browser**.
-- **Session** = Server-side data **linked to a cookie** that identifies you.
-
 Think:
-- Cookie → "Your library card" 📇
-- Session → "Books you’ve borrowed" 📚 stored at the library.
+- Cookie → Your library card 📇
+- Session → Books you’ve borrowed 📚 stored at the library.
+
+| Cookies | Sessions |
+|---------|----------|
+| 🏠 Stored on user's browser | 🏢 Stored on server |
+| 📝 Can hold any data you put in them | 🔐 Browser only holds an ID, data stays on server |
+| ⏰ Last until expiration date | ⏰ Usually expire when browser closes |
+| 👁️ Visible to user (they can see/edit) | 🔒 Hidden from user (more secure) |
+| 🐌 Sent with every request (affects speed) | ⚡ Only ID sent (faster) |
 
 ### Rails Examples
 
@@ -76,7 +80,7 @@ Rails.application.config.session_store :cookie_store, key: '_app_session', secur
 * Use sessions for **user state** that must be tamper-proof.
 * For large session data, move to Redis/memcache to avoid cookie bloat.
 
-### TL;DR
+### 🧵 TL;DR
 
 * Cookie = browser storage, Session = server-managed user state.
 * Rails sessions often stored in encrypted cookies by default.
