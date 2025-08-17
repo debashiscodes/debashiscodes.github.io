@@ -47,7 +47,7 @@ end
 
 🧠 Logging, retries, timeouts — Faraday handles it all.
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 
 - Faraday = clean + powerful HTTP client
 - Use it for APIs that need more than just GETs

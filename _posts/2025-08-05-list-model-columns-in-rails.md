@@ -38,7 +38,7 @@ Product.column_names - ["id", "created_at", "updated_at"]
 
 Clean and ready for custom display.
 
-### 🧾 TL;DR
+### ⚡ TL;DR
 
 | Task                       | Shortcut                         |
 | -------------------------- | -------------------------------- |

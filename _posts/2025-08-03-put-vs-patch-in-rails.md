@@ -61,7 +61,7 @@ end
 - Use `PUT` if you want to **overwrite the whole object**
 - Use `PATCH` for **lightweight updates**
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 
 - **PUT**: Full update – replaces the whole record ✅
 - **PATCH**: Partial update – tweaks only what you send ✂️

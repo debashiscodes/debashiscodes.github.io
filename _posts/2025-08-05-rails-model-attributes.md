@@ -46,7 +46,7 @@ Or convert to JSON for APIs:
 product.attributes.to_json
 ```
 
-### 🧾 TL;DR
+### ⚡ TL;DR
 
 | Task                    | Shortcut                     |
 | ----------------------- | ---------------------------- |

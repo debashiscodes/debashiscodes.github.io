@@ -47,7 +47,7 @@ Product.attribute_names.include?("discounted_price") # => true
 Product.column_names.include?("discounted_price")    # => false
 ```
 
-### 🎬 TL;DR
+### ⚡ TL;DR
 
 - `.attribute_names` = full model context
 - `.column_names` = just DB schema

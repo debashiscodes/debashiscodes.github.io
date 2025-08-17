@@ -80,7 +80,7 @@ Rails.application.config.session_store :cookie_store, key: '_app_session', secur
 * Use sessions for **user state** that must be tamper-proof.
 * For large session data, move to Redis/memcache to avoid cookie bloat.
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 
 * Cookie = browser storage, Session = server-managed user state.
 * Rails sessions often stored in encrypted cookies by default.

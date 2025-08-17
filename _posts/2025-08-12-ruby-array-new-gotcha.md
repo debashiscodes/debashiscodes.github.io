@@ -35,7 +35,7 @@ arr
 **Why?**
 The block runs for each index, creating a *new object* each time.
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 - `Array.new(size, obj)` → repeats the *same object*.
 - `Array.new(size) { ... }` → creates *fresh objects*.
 - Use block form to avoid unexpected mutations.

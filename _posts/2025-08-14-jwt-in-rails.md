@@ -174,7 +174,7 @@ Example:
 * Use HTTPS — JWTs can be stolen if sent over plain HTTP.
 * Invalidate tokens via **short expiry + refresh tokens**.
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 
 * JWT = signed info package for **stateless authentication**.
 * Removes the need for server session storage.

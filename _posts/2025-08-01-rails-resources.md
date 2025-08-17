@@ -39,7 +39,7 @@ Creates **all RESTful routes** for `Product` – instantly!
 <%= link_to 'Edit', edit_product_path(product) %>
 ```
 
-### 🧵 TL;DR
+### ⚡ TL;DR
 
 - `resources :products` = 8 routes in 1 line
 - Follows RESTful architecture
