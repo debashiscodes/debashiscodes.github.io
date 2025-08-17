@@ -108,7 +108,7 @@ upstream restaurants {
 }
 ```
 
-## 🌳 The Decision Tree
+### 🌳 The Decision Tree
 
 ```
 Are you at capacity?
@@ -118,60 +118,60 @@ Are you at capacity?
    └─ Yes → HORIZONTAL (add servers + load balancer)
 ```
 
-## 📊 Real Numbers: What Each User Count Means
+### 📊 Real Numbers: What Each User Count Means
 
-### 👥 1,000 Users
+#### 👥 1,000 Users
 
 * Concurrent: \~50–100
 * RPS: \~10–20
 * Setup: \$20/month server
 * Puma: 2 workers × 5 threads
 
-### 👥 5,000 Users
+#### 👥 5,000 Users
 
 * Concurrent: \~250–500
 * RPS: \~50–100
 * Setup: \$80/month server
 * Puma: 4 workers × 8 threads
 
-### 👥 20,000 Users
+#### 👥 20,000 Users
 
 * Concurrent: \~1,000–2,000
 * RPS: \~200–400
 * Setup: 3 servers + load balancer (\~\$300/month)
 * Puma: 4 workers × 8 threads per server
 
-### 👥 100,000 Users
+#### 👥 100,000 Users
 
 * Concurrent: \~5,000–10,000
 * RPS: \~1,000–2,000
 * Setup: 10+ servers + auto-scaling + CDN
 * Extras: DB replicas, Redis cluster, monitoring
 
-## 💰 Cost Reality
+### 💰 Cost Reality
 
-### Vertical Scaling
+#### Vertical Scaling
 
 * 1,000 users → \$20/mo
 * 5,000 users → \$80/mo
 * 10,000 users → \$200/mo
 * 15,000 users → Impossible!
 
-### Horizontal Scaling
+#### Horizontal Scaling
 
 * 10,000 users → \$150/mo (3 servers)
 * 20,000 users → \$300/mo (6 servers)
 * 100,000 users → \$1,500/mo (30 servers)
 * ∞ users → Just add more servers
 
-## 🏆 The Golden Rules
+### The Golden Rules
 
 1. **Start Vertical** — simpler to manage one big server.
 2. **Go Horizontal When You Hit the Wall** — multiply servers.
 3. **Monitor Before You Scale** — don’t guess, measure.
 4. **Database = Real Bottleneck** — optimize DB, cache, and CDN first.
 
-## ⚡ TL;DR
+### ⚡ TL;DR
 
 * 🧑‍🍳 One chef = vertical scaling
 * 👨‍🍳👩‍🍳 Many chefs = horizontal scaling
