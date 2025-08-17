@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "🍪 Cookies vs 🗄 Sessions in Rails"
+title:  "Cookies vs Sessions in Rails"
 date:   2025-08-15 11:28:41 +0530
 categories: Rails
 ---

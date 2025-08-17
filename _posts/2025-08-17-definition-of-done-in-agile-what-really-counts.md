@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "✅ Definition of Done in Agile: What Really Counts?"
+title:  "Definition of Done in Agile: What Really Counts?"
 date:   2025-08-16 11:28:41 +0530
 categories: Rails Agile
 ---

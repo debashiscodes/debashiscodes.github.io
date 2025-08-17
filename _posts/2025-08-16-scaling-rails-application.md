@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "🚀 Scaling Rails: The Playbook for High-Traffic Apps"
+title:  "Scaling Rails: The Playbook for High-Traffic Apps"
 date:   2025-08-16 11:28:41 +0530
 categories: Rails
 ---
