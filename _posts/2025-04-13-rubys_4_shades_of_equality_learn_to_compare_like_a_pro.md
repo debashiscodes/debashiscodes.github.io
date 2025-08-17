@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby’s 4 Shades of Equality – Learn to Compare Like a Pro"
-date:   2025-06-16 11:27:41 +0530
+date:   2025-04-13 11:27:41 +0530
 categories: ruby
 ---
 Ever wondered why ==, ===, eql?, and equal? all exist in Ruby?

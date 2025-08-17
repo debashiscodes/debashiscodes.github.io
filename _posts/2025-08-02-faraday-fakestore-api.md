@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making API Requests with Faraday in Ruby"
-date:   2025-08-06 11:28:41 +0530
+date:   2025-08-02 11:28:41 +0530
 categories: Ruby
 ---
 

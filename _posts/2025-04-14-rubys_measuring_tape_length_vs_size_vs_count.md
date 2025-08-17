@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby's Measuring Tape: length vs size vs count"
-date:   2025-06-27 11:27:41 +0530
+date:   2025-04-14 11:27:41 +0530
 categories: Ruby
 ---
 In Ruby, you’ll come across three ways to check how many things you have: `length`, `size`, and `count`. They might seem the same, but each one has its own special use.

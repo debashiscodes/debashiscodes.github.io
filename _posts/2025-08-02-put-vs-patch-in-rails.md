@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PUT vs PATCH in Rails – What’s the REAL Difference?"
-date:   2025-08-03 11:28:41 +0530
+date:   2025-08-02 11:28:41 +0530
 categories: Rails
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Perfecting Your Git Commits with Prefixes"
-date:   2025-06-10 11:27:41 +0530
+date:   2025-04-10 11:27:41 +0530
 categories: git
 ---
 Have you ever been confused by a Git commit message, whether it's from a past teammate or on a recent pull request, struggling to understand what work was actually done?

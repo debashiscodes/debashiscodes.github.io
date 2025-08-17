@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Single vs Double Quotes in Ruby: When to Use What?"
-date:   2025-06-28 11:28:41 +0530
+date:   2025-04-17 11:28:41 +0530
 categories: Ruby
 ---
 Strings in Ruby can be written using either `single quotes`('this is a string') or `double quotes`("this is also a string") — but they don't work exactly the same.

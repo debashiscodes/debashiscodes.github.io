@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Path Parameters vs Query Parameters"
-date:   2025-08-11 11:28:41 +0530
+date:   2025-08-03 11:28:41 +0530
 categories: Rails
 ---
 

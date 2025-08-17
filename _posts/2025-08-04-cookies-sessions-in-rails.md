@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cookies vs Sessions in Rails"
-date:   2025-08-15 11:28:41 +0530
+date:   2025-08-04 11:28:41 +0530
 categories: Rails
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using the - Operator with Ruby Arrays"
-date:   2025-07-18 11:28:41 +0530
+date:   2025-07-05 11:28:41 +0530
 categories: Ruby
 ---
 

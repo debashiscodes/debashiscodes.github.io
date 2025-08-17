@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby Array.new Gotcha – Why All Elements Change!"
-date:   2025-08-12 11:28:41 +0530
+date:   2025-08-03 11:28:41 +0530
 categories: Ruby
 ---
 

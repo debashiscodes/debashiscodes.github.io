@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "From Chaos to Clarity: Ordering Your Rails Model Code Like a Pro"
-date:   2025-06-28 11:27:41 +0530
+date:   2025-04-15 11:27:41 +0530
 categories: Rails
 ---
 Ever opened a Rails model and felt overwhelmed by the messy code?

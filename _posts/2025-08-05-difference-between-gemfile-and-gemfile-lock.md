@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Difference Between 'Gemfile' and 'Gemfile.lock'"
-date:   2025-08-16 11:28:41 +0530
+date:   2025-08-05 11:28:41 +0530
 categories: Ruby
 ---
 

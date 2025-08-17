@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Managing Multiple Ruby and Rails Versions with RVM"
-date:   2025-07-29 11:28:41 +0530
+date:   2025-07-07 11:28:41 +0530
 categories: Ruby
 ---
 

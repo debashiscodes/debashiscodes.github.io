@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Write Solid Code With SOLID"
-date:   2025-07-08 11:28:41 +0530
+date:   2025-07-02 11:28:41 +0530
 categories: Ruby
 ---
 Let's explain the `SOLID` principles using the characters and situations from the beloved village Indian drama *Panchayat* on `PrimeVideo`!
