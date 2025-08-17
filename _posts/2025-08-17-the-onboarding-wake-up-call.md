@@ -5,13 +5,13 @@ date:   2025-08-17 11:28:41 +0530
 categories: Onboarding
 ---
 
-### OK so this happens everywhere with terrible onboarding...
+OK so this happens sometimes with terrible onboarding...
 
 Let me paint you a picture. New developer, super talented, starts Monday. Company's like "here's your laptop, here's the codebase, good luck!" and basically throws them into the deep end. Three weeks later? Still asking basic questions, looking lost in meetings, and you can tell they're questioning their life choices.
 
 That's when this whole proper onboarding thing started making sense, and wow... most companies are doing literally everything wrong.
 
-### The "Day Zero" thing actually works
+### **1.** The "Day Zero" thing actually works
 
 So apparently companies are supposed to start onboarding BEFORE people even show up. Mind blown, right?
 
@@ -22,7 +22,7 @@ Here's what actually works:
 
 The difference is night and day. They walk in already feeling welcomed instead of like a deer in headlights.
 
-### Week One: Don't dump everything at once
+### **2.** Week One: Don't dump everything at once
 
 Here's where teams usually mess up - information overload on day one. Architecture diagrams, project timelines, team dynamics, coding standards... basically vomiting the entire company knowledge onto them.
 
@@ -40,7 +40,7 @@ Here's what works better:
 
 That last point? Game changer. Nothing kills confidence like giving someone a "quick task" that turns into a week-long rabbit hole.
 
-### Week Two: This is where the magic happens
+### **3.** Week Two: This is where the magic happens
 
 #### Code reviews become teaching moments
 Instead of just `LGTM` or cryptic comments, good teams start explaining the WHY behind their patterns. Like:
@@ -52,18 +52,18 @@ Smart managers start involving them in sprint planning. Not just "here's your ti
 
 Watching someone go from "um, whatever you think" to actually having opinions and ideas? That's the good stuff.
 
-### The celebration part (don't skip this!)
+### **4.** The celebration part (don't skip this!)
 
 Most places think celebrating small wins is cheesy corporate stuff. But honestly? When that new hire deploys their first feature and the team does a little demo in the meeting - seeing their face light up - that's when you know they feel like they belong.
 
-### What smart teams have learned
+### **5.** What smart teams have learned
 
 - **Buddy system is ESSENTIAL** - peers explain things differently than managers do
 - **First task matters MORE than you think** - make it completable but not trivial
 - **Information spacing** - drip-feed knowledge instead of fire-hosing it
 - **Context is everything** - explain WHY teams do things, not just WHAT they do
 
-### The two-week test
+### **6.** The two-week test
 
 The best companies ask: "After two weeks, do new hires feel confident enough to contribute meaningfully?"
 
