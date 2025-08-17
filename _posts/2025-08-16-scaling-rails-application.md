@@ -5,21 +5,21 @@ date:   2025-08-16 11:28:41 +0530
 categories: Rails
 ---
 
-## 🍴 Imagine You’re Running a Restaurant
+## Imagine You’re Running a Restaurant
 
-### ⚡ Vertical Scaling = Making Your Chef Faster
+### Vertical Scaling = Making Your Chef Faster
 
 Imagine you have one super-talented chef in the restaurant. When you get more customers:
 
 **Vertical Scaling** means making that one chef work faster:
-- 🔪 Better knives (**faster CPU**)
-- 🍳 More burners on the stove (**more memory**)
-- 👨‍🍳 Assistant to prep ingredients (**more threads**)
-- 🏗️ Bigger workspace (**bigger server**)
+- Better knives (**faster CPU**)
+- More burners on the stove (**more memory**)
+- Assistant to prep ingredients (**more threads**)
+- Bigger workspace (**bigger server**)
 
 **Limits:** Even the world's best chef can only cook so many meals per hour. There's a physical limit.
 
-### 👩‍🍳 Horizontal Scaling = Hiring More Chefs
+### Horizontal Scaling = Hiring More Chefs
 
 **Horizontal Scaling** means hiring more chefs:
 - Chef #1 → tables 1–10
@@ -150,14 +150,14 @@ Are you at capacity?
 
 ## 💰 Cost Reality
 
-### 📈 Vertical Scaling
+### Vertical Scaling
 
 * 1,000 users → \$20/mo
 * 5,000 users → \$80/mo
 * 10,000 users → \$200/mo
-* 15,000 users → Impossible! 🚧
+* 15,000 users → Impossible!
 
-### 📡 Horizontal Scaling
+### Horizontal Scaling
 
 * 10,000 users → \$150/mo (3 servers)
 * 20,000 users → \$300/mo (6 servers)
