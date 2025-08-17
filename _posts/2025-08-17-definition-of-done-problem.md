@@ -58,16 +58,16 @@ Smart teams figured out you need to cover the basics:
 
 ### **4.** How teams actually implement this without going crazy
 
-#### Start small, don't boil the ocean
+#### 1. Start small, don't boil the ocean
 Beginning with a 20-point checklist just kills momentum. Start with the essentials, add more as the team gets comfortable.
 
-#### Make it visible everywhere
+#### 2. Make it visible everywhere
 Put it in the README, sprint board, PR templates - anywhere people might forget to check.
 
-#### Automate the boring stuff
+#### 3. Automate the boring stuff
 Tests, linting, security scans - if a computer can check it, let the computer check it.
 
-#### Actually review and update it
+#### 4. Actually review and update it
 What worked for a 3-person team might not work for 10 people. The DoD should evolve.
 
 ### **5.** The real benefit nobody talks about
