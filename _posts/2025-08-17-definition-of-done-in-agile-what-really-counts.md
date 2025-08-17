@@ -49,4 +49,8 @@ Without it:
 
 ### ⚡ TL;DR
 
-DoD is your team’s quality promise. It turns “works on my machine” into “ready for customers.” Start small, be consistent, automate checks, evolve continuously. When implemented well, done really means done. ✅
+DoD is your team’s quality promise.
+
+It turns “works on my machine” into “ready for customers.” Start small, be consistent, automate checks, evolve continuously.
+
+When implemented well, done really means done. ✅
