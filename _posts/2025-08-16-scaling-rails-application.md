@@ -7,7 +7,7 @@ categories: Rails
 
 ## Imagine You’re Running a Restaurant
 
-### Vertical Scaling = Making Your Chef Faster
+### 📈⬆️🖥️ Vertical Scaling = Making Your Chef Faster
 
 Imagine you have one super-talented chef in the restaurant. When you get more customers:
 
@@ -19,7 +19,7 @@ Imagine you have one super-talented chef in the restaurant. When you get more cu
 
 **Limits:** Even the world's best chef can only cook so many meals per hour. There's a physical limit.
 
-### Horizontal Scaling = Hiring More Chefs
+### 📊↔️🖥️🖥️🖥️ Horizontal Scaling = Hiring More Chefs
 
 **Horizontal Scaling** means hiring more chefs:
 - Chef #1 → tables 1–10
