@@ -5,7 +5,7 @@ date:   2025-08-16 11:28:41 +0530
 categories: Rails Agile
 ---
 
-Imagine you're a chef. When is a dish done?
+Imagine you're a chef. When is a dish `done`?
 - Cooked?
 - Seasoned?
 - Plated?
@@ -34,10 +34,10 @@ Without it:
 
 ### Core Elements of DoD
 
-**Code Quality:** style guide, linting, peer review
-**Testing:** unit, integration, acceptance, security, performance
-**Documentation:** code comments, API docs, changelog
-**Deployment:** CI/CD green, feature flags, rollback plan
+- **Code Quality:** style guide, linting, peer review
+- **Testing:** unit, integration, acceptance, security, performance
+- **Documentation:** code comments, API docs, changelog
+- **Deployment:** CI/CD green, feature flags, rollback plan
 
 ### Implementing DoD
 
