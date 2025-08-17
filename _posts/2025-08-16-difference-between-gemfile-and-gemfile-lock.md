@@ -5,7 +5,7 @@ date:   2025-08-16 11:28:41 +0530
 categories: Ruby
 ---
 
-### Think Shopping List as Gemfile and Receipt as Gemfile.lock
+Think Shopping List as Gemfile and Receipt as Gemfile.lock
 - **`Gemfile`** → Shopping list: *“I need milk, bread, and coffee”*
 - **`Gemfile.lock`** → Receipt: *“2% milk, Farm Fresh Dairy, batch #12345, bought on March 15th at $3.99”*
 

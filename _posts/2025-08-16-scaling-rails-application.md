@@ -5,7 +5,7 @@ date:   2025-08-16 11:28:41 +0530
 categories: Rails
 ---
 
-## Imagine You’re Running a Restaurant
+Imagine You’re Running a Restaurant
 
 ### 📈⬆️🖥️ Vertical Scaling = Making Your Chef Faster
 
