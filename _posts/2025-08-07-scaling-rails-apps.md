@@ -3,6 +3,7 @@ layout: post
 title:  "Scaling Rails Apps (or: How to survive the dreaded traffic spike)"
 date:   2025-08-16 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 That panic moment when your app goes viral...
