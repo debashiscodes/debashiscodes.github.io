@@ -3,6 +3,7 @@ layout: post
 title:  "Database Indexing in Rails (or: Why your queries are slow and what to do about it)"
 date:   2025-08-18 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 That moment when your app suddenly feels like molasses...
