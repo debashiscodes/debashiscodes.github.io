@@ -6,10 +6,12 @@ permalink: /work-logs/
 ---
 
 ### 2025-08-01
-- **Learning 1:**
+
+* **Learning 1:**
+
 ```ruby
 # Code example
-````
+```
 
 * **Learning 2:**
 
