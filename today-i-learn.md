@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Work Logs
-permalink: /work-logs/
+title: TIL
+permalink: /today-i-learn/
 ---
 ---
 

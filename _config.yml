@@ -36,8 +36,8 @@ plugins:
   - jekyll-feed
 
 nav:
-  - title: "Work Logs"
-    url: "/work-logs"
+  - title: "TIL"
+    url: "/today-i-learn"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
