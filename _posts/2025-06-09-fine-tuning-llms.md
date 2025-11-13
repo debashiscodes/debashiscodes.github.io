@@ -3,6 +3,7 @@ layout: post
 title:  "Fine-tuning LLMs (or: How to teach LLM your company's weird jargon)"
 date:   2025-06-09 11:28:41 +0530
 categories: AI
+private: true
 ---
 
 So AI doesn't understand your business...
