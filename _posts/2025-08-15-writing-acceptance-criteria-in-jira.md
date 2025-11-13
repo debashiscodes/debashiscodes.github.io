@@ -3,6 +3,7 @@ layout: post
 title:  "Writing Acceptance Criteria in Jira (that won't make developers hate you)"
 date:   2025-08-15 11:28:41 +0530
 categories: Agile
+private: true
 ---
 
 Sprint planning meeting 😕. Product owner presents a user story: `"As a user, I want to log in so I can access my account."`

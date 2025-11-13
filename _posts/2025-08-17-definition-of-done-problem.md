@@ -3,6 +3,7 @@ layout: post
 title:  "The `Definition of Done` Problem (and why teams keep fighting about it)"
 date:   2025-08-16 11:28:41 +0530
 categories: Rails Agile
+private: true
 ---
 
 That awkward moment when "done" means different things...

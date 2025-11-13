@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby Writes Code. Java Writes Novels"
 date:   2025-07-01 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 In a tech conference, Java walks in, wearing a formal suit and carrying a huge 600-page manual.
 
