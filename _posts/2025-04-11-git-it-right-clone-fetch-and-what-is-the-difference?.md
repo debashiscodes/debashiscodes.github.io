@@ -3,6 +3,7 @@ layout: post
 title:  "Git Clone vs Fetch vs Pull – What’s the Difference?"
 date:   2025-04-11 11:27:41 +0530
 categories: git
+private: true
 ---
 Git commands like `clone`, `fetch`, and `pull` can be confusing at first. They all help you get code from a remote source, but each works differently.Here we’ll explain them in simple terms, so you know what to use and when.
 
