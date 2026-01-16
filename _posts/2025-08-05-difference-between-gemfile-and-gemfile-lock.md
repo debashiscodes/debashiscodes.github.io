@@ -3,6 +3,7 @@ layout: post
 title:  "Difference Between 'Gemfile' and 'Gemfile.lock'"
 date:   2025-08-05 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 Think Shopping List as Gemfile and Receipt as Gemfile.lock

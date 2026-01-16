@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby Array.new Gotcha – Why All Elements Change!"
 date:   2025-08-03 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 Ruby can *trick you* if you’re not careful with `Array.new`.

@@ -3,6 +3,7 @@ layout: post
 title:  "JWT in Rails"
 date:   2025-08-04 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 Imagine you have a **magic library card** 📇.

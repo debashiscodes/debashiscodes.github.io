@@ -3,6 +3,7 @@ layout: post
 title:  "Path Parameters vs Query Parameters"
 date:   2025-08-03 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 OK so... Path Parameters vs Query Parameters (and why I kept mixing them up)
