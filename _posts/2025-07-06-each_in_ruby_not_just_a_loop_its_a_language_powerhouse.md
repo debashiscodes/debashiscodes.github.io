@@ -3,6 +3,7 @@ layout: post
 title:  "each in Ruby: Not Just a Loop, It’s a Language Powerhouse"
 date:   2025-07-06 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 In Ruby, each is one of the first things every developer learns — and it quickly becomes one of the most used tools in their toolkit.

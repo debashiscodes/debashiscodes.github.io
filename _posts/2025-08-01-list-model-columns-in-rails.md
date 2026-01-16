@@ -3,6 +3,7 @@ layout: post
 title:  "Rails Trick: List All Columns in One Line"
 date:   2025-08-01 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 Need to see all columns of a model?

@@ -3,6 +3,7 @@ layout: post
 title:  "attribute_names vs column_names in Rails – What's the Difference?"
 date:   2025-08-02 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 They look similar… but they’re *not* the same!

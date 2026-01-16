@@ -3,6 +3,7 @@ layout: post
 title:  "Using the - Operator with Ruby Arrays"
 date:   2025-07-05 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 Working with arrays in Ruby? Sometimes you need to remove certain items from one array based on another — like filtering out unwanted data. Ruby makes this super simple with the - operator.

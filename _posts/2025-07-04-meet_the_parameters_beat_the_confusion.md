@@ -3,6 +3,7 @@ layout: post
 title:  "Meet the Parameters, Beat the Confusion"
 date:   2025-07-04 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 When you define a method in Ruby, you usually need to pass in some data — like a name, a number, or even a list or hash. That’s where parameters and arguments come into play.
 

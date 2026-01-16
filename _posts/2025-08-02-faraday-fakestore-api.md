@@ -3,6 +3,7 @@ layout: post
 title:  "Making API Requests with Faraday in Ruby"
 date:   2025-08-02 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 If you're tired of `Net::HTTP`, give **Faraday** a try 👇

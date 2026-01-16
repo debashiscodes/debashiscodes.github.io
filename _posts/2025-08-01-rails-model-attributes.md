@@ -3,6 +3,7 @@ layout: post
 title:  "The Easiest Way to Peek Inside Any Rails Model"
 date:   2025-08-01 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 Want to peek inside your model instance?

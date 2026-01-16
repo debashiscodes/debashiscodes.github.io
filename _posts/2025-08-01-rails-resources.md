@@ -3,6 +3,7 @@ layout: post
 title:  "Rails Magic: `resources :products` – What Does It Really Do"
 date:   2025-08-01 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 Write one line… get **8 routes** for free? 😮

@@ -3,6 +3,7 @@ layout: post
 title:  "Tidy Up with compact_blank"
 date:   2025-07-03 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 Introduced in Rails 6.1, `compact_blank` is an Rails ActiveSupport method that removes all blank values (like nil, empty strings, or whitespace) from Arrays, Hashes, and other Enumerable objects.
 
