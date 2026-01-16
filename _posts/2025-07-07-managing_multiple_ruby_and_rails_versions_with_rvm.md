@@ -3,6 +3,7 @@ layout: post
 title:  "Managing Multiple Ruby and Rails Versions with RVM"
 date:   2025-07-07 11:28:41 +0530
 categories: Ruby
+private: true
 ---
 
 ## How to Use Multiple Ruby and Rails Versions with RVM

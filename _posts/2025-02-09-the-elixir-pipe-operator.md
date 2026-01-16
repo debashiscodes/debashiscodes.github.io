@@ -3,6 +3,7 @@ layout: post
 title:  "The Elixir Pipe Operator (or: How to read code like English)"
 date:   2025-02-09 11:28:41 +0530
 categories: Elixir
+private: true
 ---
 
 You know the feeling. You're reading some code that looks like this:

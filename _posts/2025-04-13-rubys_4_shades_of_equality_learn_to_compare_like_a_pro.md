@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby’s 4 Shades of Equality – Learn to Compare Like a Pro"
 date:   2025-04-13 11:27:41 +0530
 categories: ruby
+private: true
 ---
 Ever wondered why ==, ===, eql?, and equal? all exist in Ruby?
 They look similar but behave very differently — and using the wrong one could cause subtle bugs.
