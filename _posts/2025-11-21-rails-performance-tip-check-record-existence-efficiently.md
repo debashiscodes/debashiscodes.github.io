@@ -3,6 +3,7 @@ layout: post
 title:  "Rails Performance Tip: Check Record Existence Efficiently"
 date:   2025-11-22 11:28:41 +0530
 categories: Rails
+private: true
 ---
 
 There are different ways to check whether a record exists in a database in Rails. Methods like present?, any?, empty?, and exists? can be used to check if a record is present in the database.
