@@ -245,6 +245,6 @@ Ruby groups objects by age:
 
 This makes GC faster because Ruby doesn’t waste time scanning old stable objects again and again.
 
-## How To Avoid Memory Leak
-- [ ] Task description
-- [ ] Another completed task
+<!-- ## How To Avoid Memory Leak -->
+<!-- - [ ] Task description -->
+<!-- - [ ] Another completed task -->
