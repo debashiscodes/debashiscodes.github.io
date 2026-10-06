@@ -14,10 +14,13 @@
   .site-footer { border-top: 1px solid var(--line); background: var(--bg); }
   .site-footer .foot-bar {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-    gap: 12px 32px; padding: 28px 24px; border-left: 0; border-right: 0;
+    gap: 12px 32px; padding: 24px 24px; border-left: 0; border-right: 0;
   }
-  .foot-links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
-  .foot-links a { font-size: 14px; color: var(--fg-muted); transition: color .15s; }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  .foot-links a {
+    font: 400 13px/1.4 var(--mono); letter-spacing: 0;
+    color: var(--fg-muted); transition: color .15s;
+  }
   .foot-links a:hover { color: var(--fg); }
-  .foot-note { margin: 0; font-size: 13px; color: var(--fg-faint); }
+  .foot-note { margin: 0; font: 400 12px/1.4 var(--mono); color: var(--fg-faint); }
 </style>

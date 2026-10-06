@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.title }}
+
+> Tech write-ups in the age of agents: AI agents, RAG, Python, Ruby and Rust, by {{ site.title }}, a software engineer.
+
+This site publishes short technical articles. Each link below points to a full article page. The RSS feed lists the same articles.
+
+## Articles
+{% for post in site.posts %}{% if jekyll.environment == "development" or post.private != true %}
+- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endfor %}
+
+## Optional
+- [RSS feed]({{ "/feed.xml" | absolute_url }})
+- [GitHub](https://github.com/debashiscodes)

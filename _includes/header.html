@@ -1,13 +1,13 @@
 <header class="site-header" role="banner">
   <div class="bar">
-    <a class="brand" rel="author" href="{{ "/" | relative_url }}">
-      <span class="brand-mark" aria-hidden="true">DB</span>
-      <span class="brand-name">{{ site.title | escape }}</span>
-    </a>
+    <a class="brand" rel="author" href="{{ "/" | relative_url }}" aria-label="{{ site.title | escape }} home">/home</a>
     <nav class="site-nav" aria-label="Primary">
-      <a href="{{ "/#articles" | relative_url }}">Articles</a>
-      <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
-      <a href="https://github.com/debashiscodes" rel="noopener">GitHub</a>
+      <a href="{{ "/#articles" | relative_url }}">/articles</a>
     </nav>
   </div>
 </header>
+
+<style>
+  .site-header .brand { font: 500 15px/1 var(--mono); letter-spacing: 0; }
+  .site-header .site-nav a { font-family: var(--mono); font-size: 13.5px; }
+</style>

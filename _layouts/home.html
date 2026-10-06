@@ -35,24 +35,24 @@ layout: default
 ╚═════╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝</pre>
     </div>
     <div class="hero-copy">
-      <h2>Notes on Ruby, Rails and AI</h2>
-      <p>Hallo, I'm a software engineer working with Ruby, Rails, JavaScript, SQL, AWS and now AI. These are short write-ups of what I learn, build and break along the way.</p>
+      <h2>Pencils Down. Agents Up.</h2>
+      <p>Hello, world. I'm Debashis, a software engineer. Welcome to my write-ups in the Age of Agents: what works, what breaks, and what still needs a human when the machine writes the code.</p>
     </div>
   </section>
 
-  {%- assign techs = "Ruby,Rails,JavaScript,SQL,AWS,AI,Git,Elixir" | split: "," -%}
+  {%- assign techs = "Agents,LLM,RAG,Claude,Python,Rails,Rust" | split: "," -%}
   <div class="split">
 
     <section class="block">
       <h2 class="label">Follow along</h2>
       <div class="cmd">
-      <a class="cmd-text" href="{{ "/feed.xml" | relative_url }}"><span class="cmd-prompt">$</span> curl <span class="cmd-arg">{{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}</span></a>
-      <button class="cmd-copy" type="button" data-copy="curl {{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}" aria-label="Copy command">Copy</button>
-    </div>
+  <a class="cmd-text" href="{{ "/feed.xml" | relative_url }}"><span class="cmd-prompt">$</span> curl <span class="cmd-arg">{{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}</span> | claude -p 'tl;dr'</a>
+  <button class="cmd-copy" type="button" data-copy="curl {{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }} | claude -p 'tl;dr'" aria-label="Copy command">Copy</button>
+</div>
     </section>
 
-    <section class="block block-flush" aria-label="Tech I work with">
-      <h2 class="label label-pad">Tech I work with</h2>
+    <section class="block block-flush" aria-label="I work with">
+      <h2 class="label label-pad">I work with</h2>
       <div class="marquee">
         <ul class="marquee-track marquee-text">
           {%- for round in (1..2) -%}
