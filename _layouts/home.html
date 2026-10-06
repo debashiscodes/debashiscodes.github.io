@@ -40,13 +40,31 @@ layout: default
     </div>
   </section>
 
-  <section class="block">
-    <h2 class="label">Follow along</h2>
-    <div class="cmd">
+  {%- assign techs = "Ruby,Rails,JavaScript,SQL,AWS,AI,Git,Elixir" | split: "," -%}
+  <div class="split">
+
+    <section class="block">
+      <h2 class="label">Follow along</h2>
+      <div class="cmd">
       <a class="cmd-text" href="{{ "/feed.xml" | relative_url }}"><span class="cmd-prompt">$</span> curl <span class="cmd-arg">{{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}</span></a>
       <button class="cmd-copy" type="button" data-copy="curl {{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}" aria-label="Copy command">Copy</button>
     </div>
-  </section>
+    </section>
+
+    <section class="block block-flush" aria-label="Tech I work with">
+      <h2 class="label label-pad">Tech I work with</h2>
+      <div class="marquee">
+        <ul class="marquee-track marquee-text">
+          {%- for round in (1..2) -%}
+            {%- for t in techs -%}
+              <li{% if round == 2 %} aria-hidden="true"{% endif %}>{{ t }}</li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </section>
+
+  </div>
 
   {%- if cat_sorted.size > 0 -%}
   <section class="block block-flush" aria-label="Topics">
