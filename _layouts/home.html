@@ -1,0 +1,167 @@
+---
+layout: default
+---
+{%- comment -%} Visible posts only (private posts are hidden in production, same rule as before) {%- endcomment -%}
+{%- assign visible = "" | split: "" -%}
+{%- assign all_cats = "" -%}
+{%- for post in site.posts -%}
+  {%- if jekyll.environment == "development" or post.private != true -%}
+    {%- assign visible = visible | push: post -%}
+    {%- for c in post.categories -%}
+      {%- assign all_cats = all_cats | append: c | append: "," -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign cat_list = all_cats | downcase | split: "," -%}
+{%- assign cat_unique = cat_list | uniq -%}
+{%- assign cat_sortable = "" | split: "" -%}
+{%- for c in cat_unique -%}
+  {%- assign n = cat_list | where_exp: "x", "x == c" | size -%}
+  {%- assign key = n | prepend: "00" | slice: -3, 3 | append: "|" | append: c -%}
+  {%- assign cat_sortable = cat_sortable | push: key -%}
+{%- endfor -%}
+{%- assign cat_sorted = cat_sortable | sort | reverse -%}
+
+<div class="frame">
+
+  <section class="hero">
+    <div class="hero-art">
+      <h1 class="sr-only">{{ site.title | escape }}</h1>
+      <pre class="ascii" aria-hidden="true">██████╗ ███████╗██████╗  █████╗ ███████╗██╗  ██╗██╗███████╗
+██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║██║██╔════╝
+██║  ██║█████╗  ██████╔╝███████║███████╗███████║██║███████╗
+██║  ██║██╔══╝  ██╔══██╗██╔══██║╚════██║██╔══██║██║╚════██║
+██████╔╝███████╗██████╔╝██║  ██║███████║██║  ██║██║███████║
+╚═════╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚══════╝</pre>
+    </div>
+    <div class="hero-copy">
+      <h2>Notes on Ruby, Rails and AI</h2>
+      <p>Hallo, I'm a software engineer working with Ruby, Rails, JavaScript, SQL, AWS and now AI. These are short write-ups of what I learn, build and break along the way.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="label">Follow along</h2>
+    <div class="cmd">
+      <a class="cmd-text" href="{{ "/feed.xml" | relative_url }}"><span class="cmd-prompt">$</span> curl <span class="cmd-arg">{{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}</span></a>
+      <button class="cmd-copy" type="button" data-copy="curl {{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}" aria-label="Copy command">Copy</button>
+    </div>
+  </section>
+
+  {%- if cat_sorted.size > 0 -%}
+  <section class="block block-flush" aria-label="Topics">
+    <h2 class="label label-pad">Written about</h2>
+    <div class="marquee">
+      <ul class="marquee-track">
+        {%- for round in (1..2) -%}
+          {%- for entry in cat_sorted -%}
+            {%- assign parts = entry | split: "|" -%}
+            {%- assign cname = parts[1] -%}
+            <li{% if round == 2 %} aria-hidden="true"{% endif %}><button type="button" class="topic" data-topic="{{ cname }}" tabindex="{% if round == 2 %}-1{% else %}0{% endif %}">{% include category-label.html name=cname %}<span class="topic-count">{{ parts[0] | plus: 0 }}</span></button></li>
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </section>
+  {%- endif -%}
+
+  <section id="articles" class="board">
+    <h2 class="label label-pad">Articles</h2>
+
+    <div class="toolbar">
+      <label class="search">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Search articles..." autocomplete="off" spellcheck="false" aria-label="Search articles">
+        <kbd aria-hidden="true">/</kbd>
+      </label>
+      <div class="tabs" role="tablist" aria-label="Filter by topic">
+        <button type="button" role="tab" class="tab is-active" aria-selected="true" data-filter="all">All <span>({{ visible.size }})</span></button>
+        {%- for entry in cat_sorted -%}
+          {%- assign parts = entry | split: "|" -%}
+          {%- assign tname = parts[1] -%}
+          <button type="button" role="tab" class="tab" aria-selected="false" data-filter="{{ tname }}">{% include category-label.html name=tname %} <span>({{ parts[0] | plus: 0 }})</span></button>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="table-head" aria-hidden="true">
+        <span>#</span><span>Article</span><span>Published</span>
+      </div>
+      <ol class="rows" id="rows">
+        {%- for post in visible -%}
+          {%- capture cats -%}{%- for c in post.categories -%}{{ c | downcase }}{% unless forloop.last %} {% endunless %}{%- endfor -%}{%- endcapture -%}
+          <li class="row" data-cats="{{ cats }}" data-title="{{ post.title | downcase | escape }}">
+            <a class="row-link" href="{{ post.url | relative_url }}">
+              <span class="rank"></span>
+              <span class="row-main">
+                <span class="row-title">{{ post.title | escape }}</span>
+                <span class="row-cats">{% for c in post.categories %}{% assign cl = c | downcase %}{% include category-label.html name=cl %}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+              </span>
+              <time class="row-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ol>
+      <p class="empty" id="empty" hidden>No articles match your search.</p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#rows .row'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var input = document.getElementById('search');
+  var empty = document.getElementById('empty');
+  var filter = 'all';
+
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var n = 0;
+    rows.forEach(function (row) {
+      var inCat = filter === 'all' || row.dataset.cats.split(' ').indexOf(filter) !== -1;
+      var inText = !q || row.dataset.title.indexOf(q) !== -1;
+      var show = inCat && inText;
+      row.hidden = !show;
+      if (show) { n++; row.querySelector('.rank').textContent = n; }
+    });
+    empty.hidden = n !== 0;
+  }
+
+  function setFilter(f) {
+    filter = f;
+    tabs.forEach(function (t) {
+      var on = t.dataset.filter === f;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    apply();
+  }
+
+  tabs.forEach(function (t) { t.addEventListener('click', function () { setFilter(t.dataset.filter); }); });
+  document.querySelectorAll('.topic').forEach(function (b) {
+    b.addEventListener('click', function () {
+      setFilter(b.dataset.topic);
+      document.getElementById('articles').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  input.addEventListener('input', apply);
+
+  document.addEventListener('keydown', function (e) {
+    var tag = (document.activeElement && document.activeElement.tagName) || '';
+    if (e.key === '/' && tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); input.focus(); }
+    else if (e.key === 'Escape' && document.activeElement === input) { input.value = ''; apply(); input.blur(); }
+  });
+
+  document.querySelectorAll('.cmd-copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard) { navigator.clipboard.writeText(btn.dataset.copy).then(done); }
+    });
+  });
+
+  apply();
+})();
+</script>
