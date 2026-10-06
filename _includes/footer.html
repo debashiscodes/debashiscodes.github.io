@@ -1,22 +1,23 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="frame">
-    <div class="footer-cols">
-      <div>
-        <h3>Browse</h3>
-        <ul>
-          <li><a href="{{ "/#articles" | relative_url }}">All articles</a></li>
-          <li><a href="{{ "/feed.xml" | relative_url }}">RSS feed</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Project</h3>
-        <ul>
-          <li><a href="https://github.com/debashiscodes" rel="noopener">GitHub</a></li>
-          <li><a href="https://github.com/debashiscodes/debashiscodes.github.io" rel="noopener">Source</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="footer-note">© 2026 {{ site.title | escape }}</p>
+  <div class="frame foot-bar">
+    <nav class="foot-links" aria-label="Footer">
+      <a href="{{ "/sitemap.md" | relative_url }}">sitemap.md</a>
+      <a href="{{ "/llms.txt" | relative_url }}">llms.txt</a>
+      <a href="{{ "/feed.xml" | relative_url }}">rss.xml</a>
+    </nav>
+    <p class="foot-note">© 2026 {{ site.title | escape }}</p>
   </div>
 </footer>
+
+<style>
+  .site-footer { border-top: 1px solid var(--line); background: var(--bg); }
+  .site-footer .foot-bar {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    gap: 12px 32px; padding: 28px 24px; border-left: 0; border-right: 0;
+  }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+  .foot-links a { font-size: 14px; color: var(--fg-muted); transition: color .15s; }
+  .foot-links a:hover { color: var(--fg); }
+  .foot-note { margin: 0; font-size: 13px; color: var(--fg-faint); }
+</style>
