@@ -12,9 +12,7 @@
   --fg-faint: #6b6b6b;
   --line: #242424;
   --line-strong: #3a3a3a;
-  --accent: #D97757;
-  --accent-dim: rgba(217, 119, 87, 0.38);
-  --accent-faint: rgba(217, 119, 87, 0.14);
+  --accent: #fff;
   --code-bg: #0a0a0a;
   --inline-code-bg: #1a1a1a;
 
@@ -41,9 +39,7 @@
     --fg-faint: #8f8f8f;
     --line: #ebebeb;
     --line-strong: #d4d4d4;
-    --accent: #C2603D;
-    --accent-dim: rgba(194, 96, 61, 0.35);
-    --accent-faint: rgba(194, 96, 61, 0.10);
+    --accent: #000;
     --code-bg: #fafafa;
     --inline-code-bg: #f0f0f0;
 
@@ -381,42 +377,3 @@ code, pre { font-family: var(--mono); }
   .marquee { overflow-x: auto; }
   html { scroll-behavior: auto; }
 }
-
-/* ===== Claude-orange accent ===== */
-::selection { background: var(--accent); color: #000; }
-
-.site-header { border-bottom-color: var(--accent-dim); }
-.site-header .brand { color: var(--accent); }
-.site-nav a:hover { color: var(--accent); background: var(--accent-faint); }
-
-@media (min-width: 1200px) {
-  .frame { border-left-color: var(--accent-dim); border-right-color: var(--accent-dim); }
-}
-.hero { border-bottom-color: var(--accent-dim); }
-.hero-art { border-right-color: var(--accent-dim); }
-.ascii { color: var(--accent); }
-
-.label { color: var(--accent); }
-.cmd { border-color: var(--accent-dim); background: var(--accent-faint); }
-.cmd-prompt { color: var(--accent); }
-.cmd-copy:hover { color: var(--accent); border-color: var(--accent); }
-
-.topic:hover { border-color: var(--accent); background: var(--accent-faint); }
-.topic-count { color: var(--accent); }
-.search:focus-within { border-color: var(--accent); }
-
-.tab.is-active::after { background: var(--accent); height: 2px; }
-.table-head { border-top-color: var(--accent-dim); border-bottom-color: var(--accent-dim); color: var(--accent); }
-.rank { color: var(--accent); opacity: .8; }
-.row-link:hover { background: var(--accent-faint); }
-.row-link:hover .row-title { color: var(--accent); }
-
-.site-footer { border-top-color: var(--accent-dim); }
-.site-footer .foot-links a:hover { color: var(--accent); }
-
-.crumbs a:hover { color: var(--accent); }
-.chip { border-color: var(--accent-dim); color: var(--accent); }
-.post-header { border-bottom-color: var(--accent-dim); }
-.post-content a { text-decoration-color: var(--accent-dim); }
-.post-content a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-.post-content blockquote { border-left-color: var(--accent); }
