@@ -5,7 +5,7 @@
   {%- assign page_title = page.title | default: site.title -%}
   <title>{% if page.url == "/" %}{{ site.title | escape }}{% else %}{{ page_title | escape }} · {{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="Notes on Ruby, Rails, JavaScript, SQL, AWS and AI by {{ site.title | escape }}.">
-  <meta name="color-scheme" content="dark light">
+  <meta name="color-scheme" content="dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
