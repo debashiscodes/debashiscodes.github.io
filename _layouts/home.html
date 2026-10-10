@@ -66,23 +66,6 @@ layout: default
 
   </div>
 
-  {%- if cat_sorted.size > 0 -%}
-  <section class="block block-flush" aria-label="Topics">
-    <h2 class="label label-pad">Written about</h2>
-    <div class="marquee">
-      <ul class="marquee-track">
-        {%- for round in (1..2) -%}
-          {%- for entry in cat_sorted -%}
-            {%- assign parts = entry | split: "|" -%}
-            {%- assign cname = parts[1] -%}
-            <li{% if round == 2 %} aria-hidden="true"{% endif %}><button type="button" class="topic" data-topic="{{ cname }}" tabindex="{% if round == 2 %}-1{% else %}0{% endif %}">{% include category-label.html name=cname %}<span class="topic-count">{{ parts[0] | plus: 0 }}</span></button></li>
-          {%- endfor -%}
-        {%- endfor -%}
-      </ul>
-    </div>
-  </section>
-  {%- endif -%}
-
   <section id="articles" class="board">
     <h2 class="label label-pad">Articles</h2>
 
@@ -103,19 +86,13 @@ layout: default
     </div>
 
     <div class="table">
-      <div class="table-head" aria-hidden="true">
-        <span>#</span><span>Article</span><span>Published</span>
-      </div>
       <ol class="rows" id="rows">
         {%- for post in visible -%}
           {%- capture cats -%}{%- for c in post.categories -%}{{ c | downcase }}{% unless forloop.last %} {% endunless %}{%- endfor -%}{%- endcapture -%}
           <li class="row" data-cats="{{ cats }}" data-title="{{ post.title | downcase | escape }}">
             <a class="row-link" href="{{ post.url | relative_url }}">
-              <span class="rank"></span>
-              <span class="row-main">
-                <span class="row-title">{{ post.title | escape }}</span>
-                <span class="row-cats">{% for c in post.categories %}{% assign cl = c | downcase %}{% include category-label.html name=cl %}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-              </span>
+              <span class="prompt" aria-hidden="true">&#10095;</span>
+              <span class="row-cmd"><span class="cur">/</span>{{ post.title | downcase | escape }}</span>
               <time class="row-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
             </a>
           </li>
@@ -143,7 +120,7 @@ layout: default
       var inText = !q || row.dataset.title.indexOf(q) !== -1;
       var show = inCat && inText;
       row.hidden = !show;
-      if (show) { n++; row.querySelector('.rank').textContent = n; }
+      if (show) { n++; }
     });
     empty.hidden = n !== 0;
   }
