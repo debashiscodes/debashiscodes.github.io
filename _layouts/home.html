@@ -44,11 +44,16 @@ layout: default
   <div class="split">
 
     <section class="block">
-      <h2 class="label">Follow along</h2>
-      <div class="cmd">
-  <a class="cmd-text" href="{{ "/feed.xml" | relative_url }}"><span class="cmd-prompt">$</span> curl <span class="cmd-arg">{{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }}</span> | claude -p 'tl;dr'</a>
-  <button class="cmd-copy" type="button" data-copy="curl {{ site.url | remove: "https://" | remove: "http://" }}{{ "/feed.xml" | relative_url }} | claude -p 'tl;dr'" aria-label="Copy command">Copy</button>
-</div>
+      {%- assign pills = site.data.ai_pills -%}
+      {%- if pills and pills.size > 0 -%}
+      {%- assign g0 = pills | first -%}
+      <div class="wotd" id="pills">
+        <p class="wotd-cmd"><span class="pills-prompt">$</span> word <span id="pills-term">{{ g0.term | downcase | replace: " ", "-" | escape }}</span></p>
+        <p class="wotd-tag"{% unless g0.tagline %} hidden{% endunless %}><span class="pills-prompt">&#10095;</span> <span id="pills-tag">{{ g0.tagline | escape }}</span></p>
+        <p class="wotd-def"><span class="pills-prompt">&#10095;</span> <span id="pills-def">{{ g0.definition | escape }}</span> <a id="pills-link" class="pills-link" href="{{ g0.post | relative_url }}"{% unless g0.post %} hidden{% endunless %}>read the post</a></p>
+      </div>
+      <script type="application/json" id="pills-data" data-base="{{ site.baseurl | escape }}">{{ pills | jsonify }}</script>
+      {%- endif -%}
     </section>
 
     <section class="block block-flush" aria-label="I work with">
@@ -158,5 +163,25 @@ layout: default
   });
 
   apply();
+})();
+</script>
+
+<script>
+(function () {
+  var holder = document.getElementById('pills-data');
+  if (!holder) return;
+  var items;
+  try { items = JSON.parse(holder.textContent); } catch (e) { return; }
+  if (!items || !items.length) return;
+  var base = holder.getAttribute('data-base') || '';
+  var d = new Date();
+  var day = Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000);
+  var item = items[day % items.length];
+  document.getElementById('pills-term').textContent = String(item.term).toLowerCase().replace(/\s+/g, '-');
+  document.getElementById('pills-def').textContent = item.definition;
+  var tag = document.getElementById('pills-tag');
+  if (item.tagline) { tag.textContent = item.tagline; tag.parentNode.hidden = false; } else { tag.parentNode.hidden = true; }
+  var link = document.getElementById('pills-link');
+  if (item.post) { link.href = base + item.post; link.hidden = false; } else { link.hidden = true; }
 })();
 </script>

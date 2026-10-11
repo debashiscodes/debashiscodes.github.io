@@ -381,3 +381,26 @@ code, pre { font-family: var(--mono); }
   -webkit-mask-image: linear-gradient(90deg, #000 0, #000 92%, transparent);
   mask-image: linear-gradient(90deg, #000 0, #000 92%, transparent);
 }
+
+/* ===== Word of the day (plain terminal lines) ===== */
+.wotd { max-width: 560px; }
+.wotd p { margin: 0; }
+.wotd-tag, .wotd-def { padding-left: calc(2ch + 6px); text-indent: calc(-2ch - 6px); }
+.wotd-cmd { margin-bottom: 6px; font: 500 14px/1.5 var(--mono); color: var(--fg); }
+.pills-prompt { margin-right: 6px; color: var(--fg-faint); }
+.wotd-tag { font: 400 14px/1.6 var(--mono); color: var(--fg); }
+.wotd-tag[hidden] { display: none; }
+.wotd-def { margin-top: 2px; font: 400 12.5px/1.6 var(--mono); color: var(--fg-faint); }
+.wotd-def .pills-prompt { visibility: hidden; }
+.wotd-tag[hidden] ~ .wotd-def { font-size: 13px; color: var(--fg-muted); }
+.wotd-tag[hidden] ~ .wotd-def .pills-prompt { visibility: visible; }
+.pills-link { margin-left: 6px; color: var(--fg); text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
+.pills-link:hover { text-decoration-color: var(--fg); }
+.pills-link[hidden] { display: none; }
+
+/* balanced row: both halves centered vertically */
+.split > .block { padding-top: 24px; padding-bottom: 24px; }
+@media (min-width: 860px) {
+  .split > .block { display: flex; flex-direction: column; justify-content: center; }
+  .split > .block + .block .label { margin-bottom: 14px; }
+}

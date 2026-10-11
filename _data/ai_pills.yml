@@ -1,0 +1,54 @@
+# Word of the day: one entry per term. Add new terms at the end.
+# Fields: term     (required)
+#         definition (required, one plain line)
+#         tagline  (optional, the big punchy line shown on the card)
+#         post     (optional, path of one of your PUBLIC posts)
+# If a value contains a colon, wrap the whole text in double quotes.
+
+- term: harness
+  definition: the code around a model that gives it tools and rules to act.
+
+- term: context window
+  tagline: "Jo window mein dikha, wahi duniya."
+  definition: all the model can see in one request. nothing outside it exists.
+
+- term: token
+  tagline: "Model ko words nahi, tokens dikhte hain. Bill bhi tokens ka aata hai."
+  definition: a chunk of text the model reads and writes. you pay per token.
+
+- term: compaction
+  tagline: "Lamba session, chhota summary. Thoda gyaan toh jaayega."
+  definition: summarise a long session to start fresh. cheaper, but loses detail.
+
+- term: AFK
+  tagline: "Agent ko kaam pe lagao. Chai peene jao."
+  definition: start an agent, walk away, review the result later.
+
+- term: vibe coding
+  tagline: "Diff padha? Nahi. Ship kiya? Haan."
+  definition: shipping the agent's code without reading the diff.
+
+- term: hallucination
+  tagline: "Confidence 100%. Sach 0%."
+  definition: confident output that is simply wrong.
+
+- term: sandbox
+  definition: a locked room for the agent, so its mistakes stay small.
+
+- term: subagent
+  definition: a helper agent started for one job. it reports back when done.
+
+- term: MCP
+  definition: a standard plug that lets an agent use outside tools and data.
+
+- term: system prompt
+  definition: standing instructions an agent reads before your first message.
+
+- term: RAG
+  definition: look things up first, then answer using what was found.
+
+- term: tool call
+  definition: the model asking the harness to run something, like a file read.
+
+- term: fine-tuning
+  definition: more training on your own examples to change how a model behaves.
