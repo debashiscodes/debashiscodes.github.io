@@ -1,0 +1,6 @@
+# Display names for elite topics. The key is the first folder name in the topic's address.
+python:
+  title: Python
+  tagline: be an elite Pythonist
+rag:
+  title: RAG

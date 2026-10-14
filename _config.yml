@@ -58,3 +58,16 @@ nav:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Unlisted elite pages: files in _elite/<topic>/<secret>/ are published at /<topic>/<secret>/<name>/
+collections:
+  elite:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "elite"
+    values:
+      layout: elite

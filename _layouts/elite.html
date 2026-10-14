@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%- include head.html -%}
+  {%- assign parts = page.url | split: "/" -%}
+  {%- assign elite_key = parts[1] -%}
+  {%- assign prefix = "/" | append: parts[1] | append: "/" | append: parts[2] | append: "/" -%}
+  {%- assign elite_info = site.data.elite[elite_key] -%}
+  {%- assign elite_title = elite_info.title | default: elite_key -%}
+  {%- assign all_chapters = site.elite | where_exp: "c", "c.chapter" | sort: "chapter" -%}
+  {%- assign chapters = "" | split: "" -%}
+  {%- for c in all_chapters -%}
+    {%- if c.url contains prefix -%}
+      {%- assign chapters = chapters | push: c -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign cur = -1 -%}
+  {%- for c in chapters -%}
+    {%- if c.url == page.url -%}{%- assign cur = forloop.index0 -%}{%- endif -%}
+  {%- endfor -%}
+  {%- assign prev_i = cur | minus: 1 -%}
+  {%- assign next_i = cur | plus: 1 -%}
+  {%- capture chapter_list -%}
+    {%- for c in chapters -%}
+      <a class="elite-chap{% if c.url == page.url %} is-active{% endif %}" href="{{ c.url | relative_url }}"{% if c.url == page.url %} aria-current="page"{% endif %}><span class="elite-num">{{ c.chapter | prepend: "00" | slice: -2, 2 }}</span><span>{{ c.title | downcase | escape }}</span></a>
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  <body class="elite-body">
+    <header class="elite-top">
+      <a class="elite-brand" href="{{ prefix | relative_url }}">/{{ elite_key }}</a>
+      {%- if cur >= 0 -%}
+      <details class="elite-menu">
+        <summary>{{ chapters[cur].chapter | prepend: "00" | slice: -2, 2 }} {{ chapters[cur].title | downcase | escape }}</summary>
+        <nav class="elite-menu-list" aria-label="Chapters">{{ chapter_list }}</nav>
+      </details>
+      {%- endif -%}
+    </header>
+
+    <div class="elite-shell">
+      <nav class="elite-side" aria-label="Chapters">
+        <div class="elite-side-label">{{ elite_info.tagline | default: elite_title | escape }}</div>
+        {{ chapter_list }}
+      </nav>
+
+      <main class="elite-main">
+        <article class="elite-article">
+          <div class="elite-crumbs">{{ elite_key }}{% if cur >= 0 %} / {{ chapters[cur].chapter | prepend: "00" | slice: -2, 2 }} {{ chapters[cur].title | downcase | escape }}{% endif %}</div>
+          <h1 class="post-title">{{ page.title | escape }}</h1>
+          <div class="post-content">
+            {{ content }}
+          </div>
+
+          <div class="elite-pager">
+            {%- if cur >= 0 and prev_i >= 0 -%}
+              {%- assign prev = chapters[prev_i] -%}
+              <a class="elite-pg" href="{{ prev.url | relative_url }}"><span class="elite-pg-label">Previous</span><span class="elite-pg-title">{{ prev.chapter | prepend: "00" | slice: -2, 2 }} {{ prev.title | downcase | escape }}</span></a>
+            {%- endif -%}
+            {%- if next_i < chapters.size -%}
+              {%- assign nxt = chapters[next_i] -%}
+              <a class="elite-pg elite-pg-next" href="{{ nxt.url | relative_url }}"><span class="elite-pg-label">{% if cur < 0 %}Start{% else %}Next{% endif %}</span><span class="elite-pg-title">{{ nxt.chapter | prepend: "00" | slice: -2, 2 }} {{ nxt.title | downcase | escape }}</span></a>
+            {%- endif -%}
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
