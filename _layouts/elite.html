@@ -21,7 +21,7 @@
   {%- assign next_i = cur | plus: 1 -%}
   {%- capture chapter_list -%}
     {%- for c in chapters -%}
-      <a class="elite-chap{% if c.url == page.url %} is-active{% endif %}" href="{{ c.url | relative_url }}"{% if c.url == page.url %} aria-current="page"{% endif %}><span class="elite-num">{{ c.chapter | prepend: "00" | slice: -2, 2 }}</span><span>{{ c.title | downcase | escape }}</span></a>
+      <a class="elite-chap{% if c.url == page.url %} is-active{% endif %}" href="{{ c.url | relative_url }}"{% if c.url == page.url %} aria-current="page"{% endif %}><span class="elite-num">{{ c.chapter | prepend: "00" | slice: -2, 2 }}</span><span>{{ c.title | escape }}</span></a>
     {%- endfor -%}
   {%- endcapture -%}
 
