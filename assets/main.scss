@@ -448,3 +448,23 @@ code, pre { font-family: var(--mono); }
   .elite-menu { display: none; }
   .elite-main { padding: 48px 64px 72px; }
 }
+
+/* Phones: pin Previous / Next to the bottom of the screen */
+@media (max-width: 859px) {
+  .elite-main { padding-bottom: 96px; }
+  .elite-pager {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; margin: 0; gap: 0;
+    min-height: 56px; padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--bg); border-top: 1px solid var(--line);
+  }
+  .elite-pg {
+    max-width: none; border: 0; border-radius: 0; background: transparent;
+    flex-direction: row; align-items: center; gap: 8px; padding: 0 16px;
+  }
+  .elite-pg + .elite-pg { border-left: 1px solid var(--line); }
+  .elite-pg-label { display: none; }
+  .elite-pg-title { font: 400 12.5px/1.2 var(--mono); }
+  .elite-pg:not(.elite-pg-next)::before { content: "\2039"; color: var(--fg-faint); font-size: 18px; line-height: 1; }
+  .elite-pg-next { justify-content: flex-end; }
+  .elite-pg-next::after { content: "\203A"; color: var(--fg-faint); font-size: 18px; line-height: 1; }
+}
