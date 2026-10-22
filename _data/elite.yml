@@ -4,3 +4,6 @@ python:
   tagline: be an elite Pythonist
 rag:
   title: RAG
+ruby-dsa:
+  title: Ruby on DSA
+  tagline: be an elite Ruby problem solver
